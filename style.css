@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  --second-bg: #3c4240;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: poppins;
+  box-sizing: border-box;
+}
+
+.resume-body {
+  width: 800px;
+  border: none;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 300px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  column-gap:50px;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  background-color: #5271ff;
+  align-items: center;
+  color: #fff;
+  padding: 20px 10px;
+  letter-spacing: 1.4px;
+  line-height: 2.2rem;
+}
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+.social-link img {
+  width: 20px;
+}
+a {
+  text-decoration: none;
+}
+.social-link {
+  display: flex;
+  gap: 5px;
+}
+.github,
+.linkedin {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+}
+.profile-info {
+  background-color: var(--second-bg);
+  color: #fff;
+  padding: 20px 40px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+.line {
+  height: 2px;
+  background-color: #fff;
+}
+.contact a{
+    color:#fff;
+    text-decoration: none;
+}
+.contact span,.skill-info span{
+    font-size: 1.2rem;
+    padding-top: 10px;
+}
+
+.skill-info{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+/** progress bar style start*/
+
+.progress{
+    width: 100%; 
+    height : .8rem;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.js-value{
+    width: 85%;
+    height: 100%;
+    background-color:#F0DB4F;
+    border-radius: 5px;
+}
+.nodejs-value{
+    width: 75%;
+    height: 100%;
+    background-color:#3C873A;
+    border-radius: 5px;
+}
+.php-value{
+    width: 90%;
+    height: 100%;
+    background-color:#484C89;
+    border-radius: 5px;
+}
+.css-value{
+    width: 75%;
+    height: 100%;
+    background-color:#264de4;
+    border-radius: 5px;
+}
+.html-value{
+    width: 90%;
+    height: 100%;
+    background-color:#e34c26;
+    border-radius: 5px;
+}
+.sql-value{
+    width: 90%;
+    height: 100%;
+    background-color:#00758F;
+    border-radius: 5px;
+}
+.bootstrap-value{
+    width: 80%;
+    height: 100%;
+    background-color:#7952B3;
+    border-radius: 5px;
+}
+.tailwind-value{
+    width: 80%;
+    height: 100%;
+    background-color:#38BDF8;
+    border-radius: 5px;
+}
+/** Progressbar styling end*/
+.cert-heading{
+  display: flex;
+  gap:5px;
+  margin-top: 30px;
+}
+
+.cert-url{
+  display: block;
+  color:#fff;
+  text-decoration: none;
+  margin-top: 20px;
+  
+}
+.objective h2{
+  color:#5271ff;
+}
+.line-2 {
+  height: 2px;
+  background-color: #000;
+}
+.objective p{
+  padding-top: 10px;
+  color:#a1a1a1;
+}
+.work-exp,.project,.education{
+  margin-top: 30px;
+  color:#5271ff;
+}
+
+.work-info,.project-title,.edu-title{
+  margin-top: 20px;
+  display: flex;
+  column-gap: 10px;
+  color:#000
+}
+.work-info h3,.project-title h3,.edu-title h3{
+  align-self: center;
+}
+.project-1>h3{
+  margin-left: 3rem;
+}
+.project ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 3rem;
+}
+.project ul li{
+  width: fit-content;
+  background-color: aqua;
+  border-radius: 10px;
+  color: #000;
+  padding: 5px;
+  margin: 5px;
+}
+.edu-desc{
+  margin-left: 3rem;
+}
+.edu-desc+ul{
+  margin-left: 3rem;
+}
+
+@media (max-width:768px) {
+    .resume-body {
+        width: 95%;
+        grid-template-columns: 1fr;
+        border:none;
+    }
+   .col-2{
+    margin-top: 20px;
+   }
+}
